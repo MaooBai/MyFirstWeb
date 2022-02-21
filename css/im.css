@@ -1,0 +1,55 @@
+.swiper {
+   position: relative;
+   margin: 60px auto;
+   width: 600px;
+   height: 600px;
+   text-align: center;
+   font-family: Arial;
+   color: #FFF;
+   overflow: hidden;
+}
+
+/*自动播放*/
+.swiper .swiper-wrapper {
+   margin-left: -600px;
+   animation: swiperAnim 9s infinite;
+   padding: 0;
+   width: 3000px;
+   height: 100%;
+}
+
+.swiper li {
+   float: left;
+   width: 600px;
+   list-style: none;
+   line-height: 600px;
+   font-size: 100px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   text-align: center;
+}
+
+/*动画*/
+@keyframes swiperAnim {
+   0% {
+       margin-left: -600px;
+   }
+   28.5% {
+       margin-left: -600px;
+   }
+   33.3% {
+       margin-left: -1200px;
+   }
+   62% {
+       margin-left: -1200px;
+   }
+   66.7% {
+       margin-left: -1800px;
+   }
+   95.2% {
+       margin-left: -1800px;
+   }
+   100% {
+       margin-left: -2400px;
+   }
+}
